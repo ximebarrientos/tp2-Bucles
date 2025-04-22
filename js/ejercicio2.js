@@ -14,20 +14,25 @@ ingresado no es válido mostrar el mensaje “Introduce un número válido”.
 
 const nota = parseInt(prompt("Ingrese la nota"));
 
-if (isNaN(nota) || nota < 0 || nota > 10) {
-  document.writeln("Este valor no es válido");
-} else {
+if (nota >= 0 && nota <= 10) {
   if (nota <= 2) {
-    document.writeln("Muy deficiente");
+    alert("Muy deficiente");
   } else if (nota <= 4) {
-    document.writeln("Insuficiente");
+    alert("Insuficiente");
   } else if (nota <= 6) {
-    document.writeln("Suficiente");
+    alert("Suficiente");
   } else if (nota === 7) {
-    document.writeln("Bien");
+    alert("Bien");
   } else if (nota <= 9) {
-    document.writeln("Notable");
+    alert("Notable");
   } else if (nota === 10) {
-    document.writeln("Sobresaliente");
+    alert("Sobresaliente");
+  }
+} else {
+  if (isNaN(nota)) {
+    document.writeln("Introduce un número válido");
+  }
+  if (nota < 0 || nota > 10) {
+    document.writeln("Número erróneo");
   }
 }
