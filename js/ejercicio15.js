@@ -4,8 +4,8 @@ const texto=prompt("Ingrese texto").toLowerCase()
 const numeroCaracteres=texto.length
 let vocales=0
 
-for(i=0;i<numeroCaracteres;i++){
-    caracter=texto.charAt(i)
+for(let i=0;i<numeroCaracteres;i++){
+    let caracter=texto.charAt(i)
     if(caracter=="a" ||caracter=="e" || caracter=="i" || caracter=="o" || caracter=="u"){
         vocales++
     }

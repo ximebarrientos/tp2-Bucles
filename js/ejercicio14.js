@@ -5,7 +5,7 @@ Por ejemplo, si tecleo “hola qué tal”, deberá salir “h-o-l-a- -q-u-e- -t
 const texto=prompt("Ingrese texto")
 const numeroCaracteres=texto.length
 
-for(i=0;i<numeroCaracteres;i++){
-    caracter=texto.charAt(i)
+for(let i=0;i<numeroCaracteres;i++){
+    let caracter=texto.charAt(i)
     document.writeln(`${caracter} - `)
 }

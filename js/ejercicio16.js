@@ -5,8 +5,8 @@ const texto=prompt("Ingrese texto").toLowerCase()
 const numeroCaracteres=texto.length
 let textoAlReves=""
 
-for(i=0; i<numeroCaracteres; i++){
-    caracter=texto.charAt(i)
+for(let i=0; i<numeroCaracteres; i++){
+    let caracter=texto.charAt(i)
     textoAlReves=caracter + textoAlReves
 }
 
